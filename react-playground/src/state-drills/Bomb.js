@@ -20,10 +20,16 @@ class Bomb extends React.Component {
     componentWillUnmount() {
         clearInterval(this.interval)
     }
+    display() {
+        return this.state.count >= 8 ? "BOOM!!!!" : (
+            this.state.count % 2 === 0 ? "tick" :
+            "tock"
+        );
+    }
     render() {
         return (
             <div>
-                <p>{this.state.sound}</p>
+                <p>{this.display()}</p>
                 <p>{this.state.count.toLocaleString()}</p>
             </div>
         );
