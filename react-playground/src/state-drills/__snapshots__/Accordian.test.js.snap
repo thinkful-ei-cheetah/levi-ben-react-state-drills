@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordian Component The component opens section 2 when clicked 1`] = `
+<ul>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <p>
+      Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!
+    </p>
+  </li>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordian Component The component opens the last section clicked 1`] = `
+<ul>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+    <p>
+      Cupiditate tenetur aliquam necessitatibus id distinctio quas nihil ipsam nisi modi!
+    </p>
+  </li>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordian Component renders as expected with sections passed in 1`] = `
+<ul>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 1
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 2
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={[Function]}
+    >
+      Section 3
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Accordian Component renders as expected without props passed in 1`] = `
+<ul>
+  <li />
+</ul>
+`;
