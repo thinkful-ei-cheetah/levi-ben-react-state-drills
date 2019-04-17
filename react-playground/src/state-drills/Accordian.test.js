@@ -36,6 +36,7 @@ describe(`Accordian Component`, () => {
           .toJSON();
         expect(tree).toMatchSnapshot();  
     });
+
     // The component renders no sections as active by default
     it('renders as expected with sections passed in', () => {
         const tree = renderer
@@ -43,12 +44,14 @@ describe(`Accordian Component`, () => {
           .toJSON();
         expect(tree).toMatchSnapshot();  
     });
+
     // The component opens a clicked section
     it('The component opens section 2 when clicked', () => {
         const wrapper = shallow(<Accordian sections={sections}/>)
         wrapper.find('button').at(1).simulate('click')
         expect(toJson(wrapper)).toMatchSnapshot()
     })
+    
     // The component only opens the last section when multiple sections have been clicked.
     it('The component opens the last section clicked', () => {
         const wrapper = shallow(<Accordian sections={sections}/>)

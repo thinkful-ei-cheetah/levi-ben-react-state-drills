@@ -11,11 +11,14 @@ class Accordian extends React.Component {
 
     renderAccordian = () => {
         console.log(this.props.sections);
-        if (this.props.sections.length > 0) return this.props.sections.map(key =>
-             <li>
-                <button onClick={() => this.handleClick(key.title)}>{key.title}</button>
-                {key.title === this.state.buttonClicked && <p>{key.content}</p>}
-             </li>
+        if (this.props.sections.length > 0) 
+            return (
+                this.props.sections.map((key, index) =>
+                <li key={index}>
+                    <button onClick={() => this.handleClick(key.title)}>{key.title}</button>
+                    {key.title === this.state.buttonClicked && <p>{key.content}</p>}
+                </li>
+            )
         );
         else return <li></li>
     }
